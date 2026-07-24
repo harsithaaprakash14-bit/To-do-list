@@ -226,13 +226,13 @@ const renderCategories = () => {
       selectedCategory = category;
       updateTotals();
       categoryTitle.innerHTML = category.title;
-      categoryImg.src = `images/${category.img}`;
+      categoryImg.src = `${category.img}`;
       renderTasks();
     });
 
     div.innerHTML = `
                   <div class="left">
-                <img src="images/${category.img}"
+                <img src="${category.img}"
                  alt="${category.title}"
                   />
                 <div class="content">
